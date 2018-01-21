@@ -20,4 +20,13 @@ class CarparkController extends Controller
         return $carPark;
     }
 
+    function getByBeacon(Request $request)
+    {
+        $beaconMajor = $request->get("beacon_major");
+        $beaconMinor = $request->get("beacon_minor");
+        $carPark = CarPark::where('has_beacon', 1)->where('beacon_major', $beaconMajor)->where('beacon_minor', $beaconMinor)->first();
+
+        return $carPark;
+    }
+
 }
