@@ -24,4 +24,5 @@ Route::group(['namespace' => 'Api', 'middleware' => ['jwt.auth']], function () {
     Route::get('carparks', 'CarparkController@getAll');
     Route::get('carparks/{carPark}', 'CarparkController@getSingle');
     Route::get('beacon', 'CarparkController@getByBeacon');
+    Route::post('start/{carPark}', 'CarparkController@startSession');
 });

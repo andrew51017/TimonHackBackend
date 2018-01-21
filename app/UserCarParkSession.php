@@ -12,6 +12,6 @@ class UserCarParkSession extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'car_registration', 'card', 'cvv'
+        'start_time', 'end_time', 'user_id', 'carpark_id'
     ];
 }
