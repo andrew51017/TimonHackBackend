@@ -26,6 +26,7 @@ class CreateCarParksTable extends Migration
             $table->longText("non_charging_days")->nullable();
             $table->longText("season_ticket_info")->nullable();
             $table->integer("total_spaces")->unsigned()->nullable();
+            $table->integer("available_spaces")->unsigned()->nullable();
             $table->integer("family_spaces")->unsigned()->nullable();
             $table->integer("motorcycle_spaces")->unsigned()->nullable();
             $table->integer("electric_spaces")->unsigned()->nullable();

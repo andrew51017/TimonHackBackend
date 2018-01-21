@@ -64,6 +64,7 @@ class ImportCarParks extends Command
 
             // Need to handle the single oddly named field.
             $storedCarPark->non_charging_days = $carPark["non-charging_days"];
+            $storedCarPark->available_spaces = $carPark["total_spaces"];
 
             $latLng = $this->geoCodingService->getLatAndLngForCarPark($storedCarPark);
 
