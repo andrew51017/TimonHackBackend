@@ -21,7 +21,7 @@ class CreateCarParksTable extends Migration
             $table->double("geo_lat")->nullable();
             $table->double("geo_lng")->nullable();
             $table->boolean("charged")->nullable();
-            $table->longText("tarrif")->nullable();
+            $table->longText("tariff")->nullable();
             $table->longText("charged_hours")->nullable();
             $table->longText("non_charging_days")->nullable();
             $table->longText("season_ticket_info")->nullable();
